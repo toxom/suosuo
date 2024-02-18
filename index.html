@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Grid Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="card-intro">
+            <h4>Toxom Group</h4>
+            <p>Toxom Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+
+        </div>
+
+        <div class="card-contact">
+            <!-- <label class="tag1">Service</label> -->
+            <h3>Contact</h3>
+            <p>
+                Email
+                <br>
+                asdasd
+                <br>
+                asdasd
+            </p>
+
+
+
+        </div>
+
+        <div class="card-articles">
+            <label class="tag1">Article</label>
+
+
+            <h3>Articles</h3>
+            <p>Email</p>        
+        </div>
+
+        <div class="card-tutoring" onclick="openTutoringModal()">
+            <label class="tag1">Service</label>
+            <div class="flag-icon">
+                <span class="fi fi-fi"></span> 
+            </div>
+
+            <h3>Learn Finnish</h3>
+            <p>Haluatko oppia suomea?</p>
+        </div>
+
+        <div class="card-resume">
+            <h3>Testimonials</h3>
+            <button class="button1">Download CV</button>
+
+        </div>
+
+        <div class="card-webdesign">
+            <label class="tag1">Service</label>
+            <h3>Web Design</h3>
+            <p>Ruponen Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+        </div>
+
+        <div class="card-prototyping">
+            <label class="tag1">Service</label>
+            <h3>Prototyping</h3>
+            <p>Toxom Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+       
+        </div>
+
+        <div class="card-3dsolutions">
+            <label class="tag1">Service</label>
+            <h3>3D Solutions</h3>
+            <p>Toxom Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+        </div>
+
+        <div class="card-automation">
+            <label class="tag1">Service</label>
+            <h3>Automation Solutions</h3>
+            <p>Toxom Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+        </div>
+
+        <div class="card-startups">
+            <label class="tag1">Service</label>
+            <h3>Startup Coaching</h3>
+            <p>Toxom Group is your partner in crafting dreams and building the realities that stand the test of time. Toxom Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+        </div>
+
+        <div class="card-creative">
+            <label class="tag1">Service</label>
+            <h3>Illustrations</h3>
+            <p>Ruponen Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+        </div>
+
+        <div class="card-editing">
+            <label class="tag1">Service</label>
+            <h3>Editor Works</h3>
+            <p>Toxom Group is your partner in crafting dreams and building the realities that stand the test of time.</p>
+        </div>
+
+      </div>
+
+      <div class="modal" id="tutoringModal">
+        <div class="overlay" id="overlay"></div>
+        <div class="modal-content" id="tutoringModalContent">
+          <!-- Modal content goes here -->
+          <span class="close" onclick="closeTutoringModal()">&times;</span>
+          <div>Your modal content</div>
+        </div>
+      </div>
+
+      <script>
+        function openTutoringModal() {
+            var modal = document.getElementById('tutoringModal');
+            var modalContent = document.getElementById('tutoringModalContent');
+            var overlay = document.getElementById('overlay');
+            var cardContent = document.querySelector('.card-tutoring').innerHTML;
+
+            modal.style.display = 'block';
+            overlay.style.display = 'block';
+
+            // Apply fade-in effect
+            setTimeout(function () {
+                modalContent.style.opacity = 1;
+            }, 10);
+            }
+
+        function closeTutoringModal() {
+            var modal = document.getElementById('tutoringModal');
+            var modalContent = document.getElementById('tutoringModalContent');
+            var overlay = document.getElementById('overlay');
+
+            // Apply fade-out effect
+            modalContent.style.opacity = 0;
+
+            // Hide the modal and overlay after the transition
+            setTimeout(function () {
+                modal.style.display = 'none';
+                overlay.style.display = 'none';
+            }, 300);
+        }
+
+        // Close modal if clicked outside of modal content or on the overlay
+        document.getElementById('overlay').addEventListener('click', closeTutoringModal);
+        document.getElementById('tutoringModal').addEventListener('click', function (event) {
+            if (event.target.id === 'tutoringModal') {
+                closeTutoringModal();
+            }
+        });
+
+      </script>
+
+      <!-- <ul class="wrapper">
+        <li><img src="portrait.jpg" alt="placeholder"></li>
+        <li class="landscape"><img src="landscape.jpg" alt="placeholder"></li>
+        <li class="landscape"><img src="landscape.jpg" alt="placeholder"></li>
+        <li class="landscape"><img src="landscape.jpg" alt="placeholder"></li>
+        <li class="landscape"><img src="landscape.jpg" alt="placeholder"></li>
+        <li><img src="portrait.jpg" alt="placeholder"></li>
+        <li><img src="portrait.jpg" alt="placeholder"></li>
+        <li><img src="portrait.jpg" alt="placeholder"></li>
+      </ul> -->
+    <!-- <div class="page-grid">
+        <div class="grid-item size-1">1</div>
+        <div class="grid-item size-2">2</div>
+        <div class="grid-item size-2">3</div>
+        <div class="grid-item size-4">4</div>
+        <div class="grid-item size-5">5</div>
+        <div class="grid-item size-1">1</div>
+        <div class="grid-item size-2">3</div>
+        <div class="grid-item size-2">4</div>
+        <div class="grid-item size-4">4</div>
+        <div class="grid-item size-5">5</div>
+    </div> -->
+<!-- 
+    <div class="custom-grid-1">
+        <div class="grid" style="--col: 1fr 1fr 2fr; --row: auto;"></div>
+    </div>
+
+    <div class="custom-grid-2"></div> -->
+
+
+
+</body>
+</html>

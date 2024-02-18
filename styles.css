@@ -1,0 +1,664 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    background-color: whitesmoke;
+    
+}
+
+.tag1 {
+    display: block;
+    width: fit-content;
+    position: relative
+;
+    /* font-family: Arial, sans-serif; */
+    background-color: yellowgreen;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid rgb(65, 65, 65);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    margin-left: 77%;
+    margin-top: -3%;
+}
+
+.button1 {
+    display: block;
+    width: fit-content;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgb(122, 122, 122));
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding for better appearance */
+    margin: 30% auto; /* Vertical margin and horizontal auto to center */
+}
+
+.button1:hover {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+    color: red;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transform:rotate(5deg);
+    transition: 0.2s ease-in-out;
+}
+
+
+.wrapper div:nth-child(4n + 1) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    background-color: #ffa94d;
+  }
+  .wrapper div:nth-child(2) {
+    grid-column: 3;
+    grid-row: 2 / 4;
+    background-color: red;
+
+    
+
+  }
+
+    .wrapper div:nth-child(3) {
+        grid-column: 4;
+        grid-row: 2 / 4;
+        background-color: green;
+    
+    }
+    .wrapper div:nth-child(4) {
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+        background-color: yellow;
+    
+    }
+
+    .wrapper div:nth-child(5) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        background-color: blue;
+
+
+
+    }
+
+    h2 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        color: white;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: white;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
+
+    
+        
+    }
+
+    h3 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        top: 20%;
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: white;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+
+    h4 {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        top: 10%;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: white;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    }
+
+    p {
+        display: none;
+        position: relative;
+        font-size: 32px;
+        font-weight: 500;
+        color: #00abf0;
+        padding: 1rem;
+        
+    }
+
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        gap: 10px;
+        grid-auto-flow: dense;
+      }
+      
+      .wrapper li.landscape {
+        grid-column-end: span 2;
+      }
+
+.container {
+  display: grid;
+  grid-template-rows: 550px;
+  grid-auto-rows: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: whitesmoke;
+  /* padding: 10px; */
+  /* border: 5px solid white; */
+  margin: 20px;
+  transform: scale(1);
+  
+  
+}
+
+
+
+.card-intro {
+    position: relative;
+    border-radius: 20px;
+    background-image: url('../assets/OIG.jpeg');
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.card-contact {
+    position: relative;
+    /* border: 2px dashed red; */
+    border-radius: 20px;
+    background-color: black;
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+
+.card-articles {
+    position: relative;
+    /* border: 2px dashed yellow; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-articles.jpeg');
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    
+}
+
+
+.card-tutoring {
+    /* border: 2px dashed coral; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-tutoring.jpeg');
+    background-color: yellowgreen;
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+
+.card-resume {
+    /* border: 2px dashed red; */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(237, 237, 237, 0.1); /* Mild box shadow */
+    background-image: url('../assets/bing-resume.jpeg');
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    
+}
+
+.card-webdesign {
+    /* border: 2px dashed coral; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-webdesign.jpeg');
+    background-size: cover;
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+ 
+
+
+}
+
+
+.card-prototyping {
+    /* border: 2px dashed yellow; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-drill.jpeg');
+    background-size: cover; /* Adjust the value as needed */
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+
+.card-3dsolutions {
+    /* border: 2px dashed coral; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-3dsolutions.jpeg');
+    background-size: cover; /* Adjust the value as needed */
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+.card-automation {
+    /* border: 2px dashed red; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-automation.jpeg');
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+.card-startups {
+    /* border: 2px dashed coral; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-startup.jpeg');
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+.card-creative {
+    /* border: 2px dashed yellow; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-illustrations.jpeg');
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    background-size: cover;
+}
+
+
+.card-editing {
+    /* border: 2px dashed coral; */
+    border-radius: 20px;
+    background-image: url('../assets/bing-editing.jpeg');
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Mild box shadow */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    background-size: cover;
+}
+
+/* Styling for the list */
+.card-contact ul {
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+
+.card-contact li {
+    margin-bottom: 5px;
+}
+
+
+.card-intro::before,
+.card-intro h2::before,
+.card-intro h3::before,
+.card-intro h4::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    background: lightgray;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.card-contact::before,
+.card-contact h2::before,
+.card-contact h3::before,
+.card-contact h4::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+    animation: showRight 1.2s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.card-articles::before,
+.card-articles h2::before,
+.card-articles h3::before,
+.card-articles h4::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    background: lightgray;
+    animation: showRight 1.4s ease forwards;
+    animation-delay: 0.6s;
+}
+
+
+
+
+.card-intro p,
+.card-contact p,
+.card-prototyping p,
+.card-articles p,
+.card-tutoring p,
+.card-resume p,
+.card-webdesign p,
+.card-3dsolutions p,
+.card-automation p,
+.card-startups p,
+.card-creative p,
+.card-editing p {
+    display: none;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: white;
+    /* padding: 1rem; */
+    box-shadow: #00abf0;
+    /* background-color: rgba(0, 171, 240, 0.5); */
+    bottom: 0;
+
+}
+
+.card-intro:hover,
+.card-contact:hover,
+.card-articles:hover,
+.card-tutoring:hover,
+.card-resume:hover,
+.card-webdesign:hover,
+.card-prototyping:hover,
+.card-3dsolutions:hover,
+.card-automation:hover,
+.card-startups:hover,
+.card-creative:hover,
+.card-editing:hover {
+    transform: scale(0.9); /* Scale down on hover */
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.card-intro h2,
+.card-intro h3,
+.card-intro p,
+.card-articles h2,
+.card-articles h3,
+.card-articles p,
+.card-tutoring h2,
+.card-tutoring h3,
+.card-tutoring p,
+.card-resume h2,
+.card-resume h3,
+.card-resume p,
+.card-webdesign h2,
+.card-webdesign h3,
+.card-webdesign p,
+.card-prototyping h2,
+.card-prototyping h3,
+.card-prototyping p, 
+.card-3dsolutions h2,
+.card-3dsolutions h3,
+.card-3dsolutions p,
+.card-automation h2,
+.card-automation h3,
+.card-automation p,
+.card-startups h2,
+.card-startups h3,
+.card-startups p,
+.card-creative h2,
+.card-creative h3,
+.card-creative p,
+.card-editing h2,
+.card-editing h3,
+.card-editing p {
+    transition: font-size 0.3s ease-in-out; /* Adding a smooth transition for font size */
+    
+}
+
+.card-intro:hover h2,
+.card-contact:hover h2,
+.card-articles:hover h2,
+.card-tutoring:hover h2,
+.card-resume:hover h2,
+.card-webdesign:hover h2,
+.card-prototyping:hover h2,
+.card-3dsolutions:hover h2,
+.card-automation:hover h2,
+.card-startups:hover h2,
+.card-creative:hover h2,
+.card-editing:hover h2 {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 4.8rem; /* Adjust the scaled-down font size for h2 on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    
+}
+
+
+.card-intro:hover h3,
+.card-contact:hover h3,
+.card-articles:hover h3,
+.card-tutoring:hover h3,
+.card-resume:hover h3,
+.card-webdesign:hover h3,
+.card-prototyping:hover h3,
+.card-3dsolutions:hover h3,
+.card-automation:hover h3,
+.card-startups:hover h3,
+.card-creative:hover h3,
+.card-editing:hover h3 {
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    text-align: center;
+    font-size: 1.6rem; /* Adjust the scaled-down font size for h3 on hover */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.card-intro:hover h4,
+.card-contact:hover h4,
+.card-articles:hover h4,
+.card-tutoring:hover h4,
+.card-resume:hover h4,
+.card-webdesign:hover h4,
+.card-prototyping:hover h4,
+.card-3dsolutions:hover h4,
+.card-automation:hover h4,
+.card-startups:hover h4,
+.card-creative:hover h4,
+.card-editing:hover h4 {
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    text-align: center;
+    font-size: 1.6rem; /* Adjust the scaled-down font size for h3 on hover */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease-in-out;
+}
+
+.card-intro:hover p,
+.card-contact:hover p,
+.card-prototyping:hover p,
+.card-articles:hover p,
+.card-tutoring:hover p,
+.card-resume:hover p,
+.card-webdesign:hover p,
+.card-3dsolutions:hover p,
+.card-automation:hover p,
+.card-startups:hover p,
+.card-creative:hover p,
+.card-editing:hover p {
+    
+    position: absolute;
+    display: block;
+    font-weight: 400;
+    font-size: 1.5rem; /* Adjust the scaled-down font size for p on hover */
+    transition: 0.3s ease-in-out;
+    /* left: 0; */
+    top: 20%;
+    width: 100%;
+    /* height:100%; */
+    justify-content: center;
+    /* color: black; */
+    /* padding: 20px; */
+    /* border-end-end-radius: 20px; */
+    /* border-end-start-radius: 20px; */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    /* border-radius: 20px; */
+    padding: 20px;
+
+
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1));
+    background-size: cover; /* Adjust the value as needed */
+    transition: 0.3s ease-in-out; /* Adding a smooth transition for scaling */
+
+}
+
+
+.fi.fi-fi {
+    display: flex;
+    font-size: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(237, 237, 237, 0.1);
+    position: relative;
+    margin-left: 60%;
+}
+.fi.fi-fi:hover {
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Start with 0 opacity */
+    transition: background-color 0.3s ease-in-out; /* Apply transition to opacity property */
+}
+
+.modal-content {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    height: 90%; /* Make it occupy full height */
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 90%; /* Make it occupy full width */
+    transition: opacity 0.3s ease-in-out; /* Apply transition to opacity property */
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) for the desired opacity */
+    display: none;
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes showUp {
+    100% {
+        height: 0;
+    }
+}
+
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+
+    }
+}
+
+
+/* Media query for screens narrower than 400px */
+@media (max-width: 400px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
+}
